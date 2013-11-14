@@ -13,7 +13,7 @@ Call liveSearch() on the container you wish to search:
 
 You will need an input field to enter the search value, the plugin looks for the `#search` ID, but you can change that:
 
-	$('.live-search').rotateQuotes({searchInput: '#filter-input'});
+	$('.live-search').rotateQuotes({searchinput: '#filter-input'});
 
 The plugin will hide all elements within the container that do not contain the search input (case-insensitive).
 
