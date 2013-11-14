@@ -15,6 +15,9 @@ You will need an input field to enter the search value, the plugin looks for the
 
 	$('.live-search').rotateQuotes({searchInput: '#filter-input'});
 
+The plugin will hide all elements within the container that do not contain the search input (case-insensitive).
+The search runs immediately as the search input changes.
+
 #Copyright and license
 
 Copyright 2013 Jay Huang under the MIT license.
