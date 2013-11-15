@@ -5,19 +5,23 @@
 	<script>window.jQuery || document.write('<script src="vendor/jquery-1.9.1.min.js"><\/script>')</script>
 	<script src="js/jquery.liveSearch.js"></script>
 	<script>
-		$( document ).ready(function() {
-			$('.live_search').liveSearch();
+		$(document).ready(function() {
+			$('.live-search').liveSearch({highlight: true, highlightcolor: '#FFB6C1'});
 		});
 	</script>
 	<style>
 	p {
 		margin: 2px 0;
 	}
+
+	.live-search {
+		width: 160px;
+	}
 	</style>
 </head>
 <body>
 <input type="text" id="search" class="clearfix" name="search" placeholder="Search here!" autofocus="autofocus">
-	<div class="live_search">
+	<div class="live-search">
 		<p>LS35lX1HokXuSV</p>
 		<p>29I6xAcss3ekOq</p>
 		<p>8LIRa6icqxTCvs</p>
