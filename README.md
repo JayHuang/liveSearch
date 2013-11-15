@@ -41,6 +41,6 @@ You can see the plugin live [here](http://www.jayhuang.org/git/demo/liveSearch).
 
 The search runs immediately as the search input changes.
 
-#Copyright and license
+###Copyright and license
 
 Copyright 2013 Jay Huang under the MIT license.
