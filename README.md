@@ -11,11 +11,33 @@ Call liveSearch() on the container you wish to search:
 
 	$('.live-search').rotateQuotes();
 
-You will need an input field to enter the search value, the plugin looks for the `#search` ID, but you can change that:
+The plugin has 4 optional settings -- `searchinput`, `hide`, `highlight`, and `highlightcolor`
 
-	$('.live-search').rotateQuotes({searchinput: '#filter-input'});
+`searchinput` is the selector for the input field, using the jQuery syntax (# is ID matching, . is class matching)
 
-The plugin will hide all elements within the container that do not contain the search input (case-insensitive).
+`hide` dictates whether or not to hide the elements that do not match
+
+`highlight` dictates whether or not the matching elements will have background color
+
+`highlightcolor` is the color for the background if `highlight` is on
+
+The default settings are:
+```
+searchinput: 	'#search',
+hide: 			true,
+highlight: 		false,
+highlightcolor: '#99ff99'
+```
+
+You can call liveSearch and pass in any or all of these settings to change the behaviour of the plugin.
+
+	$('.live-search').liveSearch({searchinput: '#filter-input', highlight: true, highlightcolor: '#FFB6C1'});
+
+The plugin runs immediately as the search input changes and will hide all elements within the container that do not contain the search input (case-insensitive).
+
+###Live demo
+
+You can see the plugin live [here](http://www.jayhuang.org/git/demo/liveSearch).
 
 The search runs immediately as the search input changes.
 
