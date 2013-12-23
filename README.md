@@ -9,7 +9,7 @@ jQuery plugin to filter through data on a page as you type
 
 Call liveSearch() on the container you wish to search:
 
-	$('.live-search').rotateQuotes();
+	$('.live-search').liveSearch();
 
 The plugin has 4 optional settings -- `searchinput`, `hide`, `highlight`, and `highlightcolor`
 
